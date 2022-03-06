@@ -5,17 +5,250 @@
 
 <body style="background-color:black;">>
   
-  body {
-  
-  
- }
-  .info h1 {
+ 	<style>
+html {
+	overflow-y: scroll;
+}
+
+body {
+	text-rendering: optimizeLegibility;
 	font: 1.1rem/1.0 sans-serif;
 }
-  
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+.info h1 {
+	font: 1.1rem/1.0 sans-serif;
+}
+
 .index h3 {
 	font: 1.1rem/1.5 serif;
 }
+
+.source {
+	font: 0.9rem/1.5 serif;
+}
+
+pre {
+	font-size: 0.9rem;
+	line-height: 1.2;
+	padding: 1rem;
+	overflow-x: auto;
+}
+
+:not(pre)>code {
+	padding: 0 2px;
+	font-size: 0.8rem;
+}
+
+.container {
+	max-width: 56rem;
+	margin: 2rem auto 12rem auto;
+}
+
+.footer {
+	font: 0.9rem/1.5 serif;
+	text-align: center;
+}
+
+.toc {
+	float: right;
+	padding: 0.75rem;
+	padding-top: 0;
+	margin-left: 0.75rem;
+}
+
+.toc ul {
+	padding-left: 1.2rem;
+	margin: 0;
+}
+
+.toc li {
+	margin-top: 0.75rem;
+}
+
+.content p.metadata {
+	font: 0.9rem/1.0 serif;
+	font-style: italic;
+}
+
+.content div.summary p {
+	margin-top: -0.5rem;
+	margin-left: 1.5rem;
+}
+
+.content {
+	max-width: 36rem;
+}
+
+.content-wide {
+	max-width: none;
+}
+
+.content p {
+	font: 1.1rem/1.5 serif;
+}
+
+.content ul {
+	padding-left: 1.1rem;
+}
+
+.content li {
+	font: 1.1rem/1.5 serif;
+}
+
+.content img {
+	width: 100%;
+	height: auto;
+}
+
+.content .aside {
+	display: inline;
+	float: left;
+	position: relative;
+	width: 8rem;
+	margin-left: -9rem;
+	font-size: 0.9rem;
+}
+
+.toclink:not(:hover) {
+	border-bottom: none;
+}
+
+@media screen and (min-width:36rem) {
+	.content {
+		margin-left: 10rem;
+	}
+
+	.bar {
+		margin-top: 2px;
+		float: left;
+		width: 8rem;
+		text-align: right;
+	}
+
+	.bar .me {
+		width: 100%;
+		display: block;
+	}
+
+	.bar .info {
+		margin-top: 1.75rem;
+	}
+
+	.bar .contact-icons a {
+		border-bottom: none;
+	}
+
+	.bar .contact-icons img {
+		width: 1.25rem;
+		height: 1.25rem;
+		margin-left: 0.5rem;
+	}
+}
+
+@media screen and (max-width:36rem) {
+	.bar {
+		display: table;
+		overflow: auto;
+		margin: auto;
+		margin-top: -0.5rem;
+	}
+
+	.bar .me {
+		float: left;
+		height: 6.5rem;
+		width: auto;
+	}
+
+	.bar .info {
+		float: left;
+		margin-top: 0.5rem;
+		margin-left: 1.5rem;
+	}
+
+	.bar .contact-icons {
+		margin-top: 1rem;
+		margin-left: 0.25rem;
+		margin-bottom: 0;
+	}
+
+	.bar .contact-icons a {
+		border-bottom: none;
+	}
+
+	.bar .contact-icons img {
+		width: 1.25rem;
+		height: 1.25rem;
+		margin-right: 1rem;
+	}
+}
+
+
+body {
+	background-color: #eee;
+	color: #000;
+}
+
+a {
+	color: #000;
+	border-bottom: 1px solid #000;
+}
+
+pre {
+	background-color: #ddd;
+}
+
+:not(pre)>code {
+	background-color: #ddd;
+}
+
+.toc {
+	background-color: #ddd;
+}
+
+.content p.metadata {
+	color: #555;
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #000;
+		color: #eee;
+	}
+
+	a {
+		color: #eee;
+		border-bottom: 1px solid #eee;
+	}
+
+	pre {
+		background-color: #222;
+	}
+
+	:not(pre)>code {
+		background-color: #222;
+	}
+
+	.toc {
+		background-color: #222;
+	}
+
+	.content p.metadata {
+		color: #aaa;
+	}
+
+	.content img {
+		filter: brightness(75%);
+	}
+
+	.contact-icons img {
+		filter: invert(1);
+	}
+}		</style>
  
 <div class="info">
 		<h1>sane</h1>
